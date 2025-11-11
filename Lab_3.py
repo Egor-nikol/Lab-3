@@ -20,7 +20,7 @@ def clicked():
         generation_key_str = generation_key()
         key_first_line = format(txt.get())  #кнопка ввода начального ключа
         key_second_line = generation_key_str[:5]
-        key_fird_line = key_first_line[-2:] + generation_key_str[5:]   
+        key_fird_line = generation_key_str[5:] + key_first_line[:2] 
 
         if (len(key_first_line) != 5):
             messagebox.showinfo('Error', 
